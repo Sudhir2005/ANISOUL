@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani-Soul: Real-Time Animal Detection</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-lg">
+        <a class="navbar-brand font-weight-bold" href="#">Ani-Soul</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Hero Section -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="display-4 hero-heading mb-3">Ani-Soul: Real-Time Animal Detection</h1>
+                <p class="lead hero-subtext">Automatically detect animals and send alerts to the authorities in real-time.</p>
+            </div>
+        </div>
+
+        <!-- Camera Feed Section -->
+        <div class="row mt-4">
+            <div class="col-md-8 offset-md-2">
+                <div class="card shadow-lg border-0">
+                    <div class="card-header bg-primary text-white">
+                        Live Camera Feed
+                    </div>
+                    <div class="card-body text-center">
+                        <!-- Replaced video with GIF -->
+                        <img id="cameraFeed" src="https://images.bhaskarassets.com/web2images/521/2024/07/15/comp-381_1721024825.gif" alt="Live Camera Feed" class="img-fluid rounded shadow">
+                        <p class="text-muted mt-2">Simulated camera feed - animal detection occurs automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Output Section -->
+        <div class="row mt-4">
+            <div class="col-md-8 offset-md-2">
+                <div id="output" class="alert text-center fadeIn" role="alert" style="display:none;">
+                    <!-- Output message will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-light mt-5 mb-3">
+        <p>© 2024 Ani-Soul</p>
+    </footer>
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

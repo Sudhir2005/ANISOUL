@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    background: url('https://images.unsplash.com/photo-1551198291-eb6977b53fef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+/* Navbar Customization */
+.custom-navbar {
+    background: linear-gradient(90deg, rgba(33,37,41,1) 0%, rgba(84,105,212,1) 100%);
+    padding: 15px 20px;
+    font-size: 1.2rem;
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin-left: 15px;
+}
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa !important;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Hero Section */
+.hero-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #ffffff;
+}
+.hero-subtext {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+p.lead {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Alert Customization */
+.alert {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    opacity: 0;
+    animation: fadeIn ease 1s forwards;
+}
+
+/* Wild and Domestic Alert Styling */
+.alert-wild {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-domestic {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2rem;
+    }
+
+    .hero-subtext {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .card-header {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
